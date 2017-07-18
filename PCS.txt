@@ -1,0 +1,25 @@
+REGEX for LDAP.cfg remote file dependency in PCS
+
+
+
+OCM / OPM ldap.cfg
+external.ldap.security.bindpassword=([^\r\n]+) 
+
+
+
+SonarQube sonar.properties 
+ldap.bindPassword=([^\r\n]+) 
+sonar.jdbc.password=([^\r\n]+)
+
+
+
+BDH bdh-multienv.ps1
+$sqlpwd = ([^\r\n]+)
+
+
+
+
+ALM Performance Center pcs.config and lts.config
+password="(.*?)"
+
+
